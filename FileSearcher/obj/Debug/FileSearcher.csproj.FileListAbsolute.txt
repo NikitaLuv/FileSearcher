@@ -1,0 +1,15 @@
+D:\Projects\FileSearcher\FileSearcher\bin\Debug\FileSearcher.exe.config
+D:\Projects\FileSearcher\FileSearcher\bin\Debug\FileSearcher.exe
+D:\Projects\FileSearcher\FileSearcher\bin\Debug\FileSearcher.pdb
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher.csprojAssemblyReference.cache
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\MainWindow.g.cs
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\App.g.cs
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher_MarkupCompile.cache
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher_MarkupCompile.lref
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\MainWindow.baml
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher.g.resources
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher.Properties.Resources.resources
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher.csproj.GenerateResource.cache
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher.csproj.CoreCompileInputs.cache
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher.exe
+D:\Projects\FileSearcher\FileSearcher\obj\Debug\FileSearcher.pdb

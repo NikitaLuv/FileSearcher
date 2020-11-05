@@ -37,11 +37,20 @@
 
         <TreeView x:Name="FilesTree" Grid.Row="1"/>
 
-        <StackPanel Grid.Row="2">
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
             <TextBlock>
                 <Run Text="Поиск в: "/>
                 <Run Name="CurrentDirectory"/>
             </TextBlock>
-        </StackPanel>
+
+            <TextBlock Grid.Column="1">
+                <Run Text="Прошло секунд: "/>
+                <Run Name="Seconds"/>
+            </TextBlock>
+        </Grid>
     </Grid>
 </Window>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,7 @@ namespace FileSearcher
         private ObservableCollection<TreeViewItem> _directoriesTree;
         private List<TreeViewItem> _folderNodeList;
         private TreeViewItem _mainNode;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -40,24 +42,6 @@ namespace FileSearcher
 
         private async void Search_Click(object sender, RoutedEventArgs e)
         {
-
-            //for(int i = 0;i < 4; i++)
-            //{
-            //    await Task.Delay(2000);
-            //    var item = new TreeViewItem();
-            //    item.Header = "dsad";
-            //    _mainNode.Items.Add(item);
-            //}
-
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    await Task.Delay(2000);
-            //    var item1 = new TreeViewItem();
-            //    item1.Header = i.ToString();
-            //    item1.Tag = "ss";
-            //    item1.Items.Add(null);
-            //    _directoriesTree.Add(item1);
-            //}
             _directoriesTree.Clear();
             _mainNode = null;
             _folderNodeList.Clear();
@@ -73,7 +57,10 @@ namespace FileSearcher
                 return;
             }
 
+            var wathc = Stopwatch.StartNew();
             FindFilePattern(startDirectory, filePattern);
+            wathc.Stop();
+            Seconds.Text = ((decimal)wathc.ElapsedMilliseconds / 1000).ToString();
         }
         private void FindFilePattern(string startDirectory, string filePattern)
         {
